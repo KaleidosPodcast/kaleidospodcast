@@ -2,9 +2,21 @@ html,body{ height: 100%; font-family: 'Futura'; font-style: normal;}
 body{background: #1a1a1a; position: relative; margin: 0;}
 hr{width: 92%;}
 
+header{
+    position:fixed;
+    width: 100%;
+    height: 13%;
+    top: 0%;
+    z-index: 3;
+    
+}
+
 .copertina{
+    position: relative;
     width: 100%;
     height: 50%;
+    top: 5%;
+    z-index: 0;
 }
 
 .box_cards{
@@ -14,6 +26,7 @@ hr{width: 92%;}
     height: 40%;
     margin-left: 5%;
     margin-right: 4%;
+    z-index: 1;
 }
 .card{
     position: relative;
@@ -28,6 +41,7 @@ hr{width: 92%;}
     .copertina{
         width: 100%;
         height: 30%;
+        top: 10%;
     }
     .box_cards{
         position: relative;
@@ -48,6 +62,13 @@ hr{width: 92%;}
         margin: 5%;
         margin-bottom: 15%;
     }
-
+    header{
+        position:fixed;
+        width: 100%;
+        height: 14%;
+        top: 0%;
+        z-index: 3;
+        
+    }
 
 }

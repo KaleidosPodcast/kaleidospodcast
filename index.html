@@ -10,11 +10,23 @@
 </head>
 <body>
    <header>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.71/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/gh9mvov-JTrpKgDt/scene.splinecode"></spline-viewer>
     </header>
     <section class="copertina">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.70/build/spline-viewer.js"></script>
-    <spline-viewer url="https://prod.spline.design/6uMa6bwpL-PeMEw8/scene.splinecode"></spline-viewer>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.71/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/6uMa6bwpL-PeMEw8/scene.splinecode"></spline-viewer>
     </section>
+    <script>
+        window.onload = function() {
+  var splineElement = document.querySelectorAll('spline-viewer');
+  
+  for (let pas = 0; pas < splineElement.length; pas++) {
+    var shadowRoot = splineElement[pas].shadowRoot;
+    shadowRoot.querySelector('#logo').remove();
+  }
+}
+    </script>
 
     <section class="box_cards">
         <section class="card"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0hw9gcC1EkNQZevQ5gMqRi?utm_source=generator" width="100%" height="150%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></section>
