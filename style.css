@@ -2,6 +2,23 @@ html,body{ height: 100%; font-family: 'Futura'; font-style: normal;}
 body{background: #1a1a1a; position: relative; margin: 0;}
 hr{width: 92%;}
 
+@font-face {
+    font-family: 'GT';
+    src: url('font/GTL001-Regular.ttf') format('truetype');;
+ }
+ @font-face {
+    font-family: 'DT';
+    src: url('font/DTGetaiGroteskDisplay-Black.ttf') format('truetype');;
+ }
+ @font-face {
+    font-family: 'Type_V';
+    src: url('font/Typefesse_Claire-Obscure.otf') format('truetype');;
+ }
+ @font-face {
+    font-family: 'Type_P';
+    src: url('font/Typefesse_Pleine.otf') format('truetype');;
+ }
+
 header{
     position:fixed;
     width: 100%;
@@ -37,6 +54,23 @@ header{
     margin: 0% 3%;
 }
 
+.stagione{
+        font-family: 'Type_V';
+        font-style: normal;
+        font-size: 60px;
+        text-align: center;
+     
+        margin-bottom: 4%;
+        margin-top: 4%;
+        margin-right: 5%;
+        margin-left: 0px;
+     
+        
+        color: #e5e5e5;
+     
+}
+
+
 @media screen and (max-width: 1050px) {
     .copertina{
         width: 100%;
@@ -70,5 +104,11 @@ header{
         z-index: 3;
         
     }
+
+    .stagione{
+        font-size: 50px;
+        margin-top: 15%;
+     
+}
 
 }
